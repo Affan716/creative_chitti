@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Chitti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>✨ Creative Chitti ✨</h1>
+
+    <div class="calculator">
+        <div id="display">0</div>
+        <div class="buttons">
+            <button onclick="addNumber(1)">+1</button>
+            <button onclick="addNumber(10)">+10</button>
+            <button onclick="addNumber(100)">+100</button>
+            <button onclick="addNumber(1000)">+1000</button>
+            <button onclick="addNumber(10000)">+10000</button>
+            <button onclick="addNumber(100000)">+100000</button>
+            <button onclick="addNumber(1000000)">+1000000</button>
+            <button onclick="addNumber(10000000)">+10000000</button>
+        </div>
+        <button class="reset" onclick="resetCalculator()">Reset</button>
+    </div>
+
+    <!-- AI Exercise Section -->
+    <div class="ai-section">
+        <h2>🤖 Math Challenge AI</h2>
+        <div class="exercise-container">
+            <div id="exercise-question" class="exercise-question">
+                Click "New Challenge" to get your first math exercise!
+            </div>
+            <div class="exercise-controls">
+    <button id="new-exercise-btn" onclick="startNewChallenge()">New Challenge</button>
+    <button id="check-answer-btn" onclick="submitAnswer()" disabled>Check Answer</button>
+    <button id="hint-btn" onclick="requestHint()" disabled>💡 Hint</button>
+</div>
+            <div id="exercise-feedback" class="exercise-feedback"></div>
+            <div id="exercise-stats" class="exercise-stats">
+                <span id="clicks-counter">Clicks used: 0</span>
+                <span id="score-counter">Score: 0</span>
+            </div>
+        </div>
+    </div>
+
+    <p class="how-it-works">
+        📘 How it works:  
+        Click any button to add that value to the total shown on the display.  
+        Use this to understand addition of large numbers in powers of 10!
+        Try the AI challenges to test your efficiency!
+    </p>
+    <p class="how-it-works">Note: The AI is not fully prepared yet. Our team is fully trying to complete it. Want suggetion from more coders. Give your suggestion on the email id affanadil1119@gmail.com</p>
+
+    <script src="script.js"></script>
+    <script src="ai.js"></script>
+</body>
+</html>
